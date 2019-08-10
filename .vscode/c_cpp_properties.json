@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\home\\static\\MinGW\\mingw64\\x86_64-w64-mingw32",
+                "D:\\home\\static\\SDL2\\x86_64-w64-mingw32\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "D:\\home\\static\\MinGW\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}

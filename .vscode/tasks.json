@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-I",
+                "D:\\home\\static\\SDL2\\x86_64-w64-mingw32\\include",
+                "-L",
+                "D:\\home\\static\\SDL2\\x86_64-w64-mingw32\\lib",
+                "-g",
+                "utils.c",
+                "-g",
+                "drawing.c",
+                "-g",
+                "io.c",
+                "-g",
+                "main.c",
+                "-o",
+                "main.exe",
+                "-l",
+                "mingw32",
+                "-l",
+                "SDL2main",
+                "-l",
+                "SDL2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
