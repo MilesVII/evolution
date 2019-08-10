@@ -18,7 +18,7 @@ void drawing_init(char* title, int w, int h){
 		//return 0;
 	}
 	window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
-                              w, h, HARDWARE_RENDER ? SDL_WINDOW_OPENGL : 0);
+	                          w, h, HARDWARE_RENDER ? SDL_WINDOW_OPENGL : 0);
 	if (HARDWARE_RENDER){
 		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 		if (renderer == NULL)
@@ -38,12 +38,12 @@ void drawing_setColor(uint32_t color){
 }
 
 void drawing_clear(uint32_t color){
-    drawing_setColor(color);
+	drawing_setColor(color);
 	SDL_RenderClear(renderer);
 }
 
 void drawing_pixel(int x, int y){
-    SDL_RenderDrawPoint(renderer, x, y);
+	SDL_RenderDrawPoint(renderer, x, y);
 }
 
 void drawing_render(){

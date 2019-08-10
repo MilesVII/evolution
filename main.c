@@ -171,7 +171,7 @@ Creature* createCreature(Simulation* sim, bool isOctocat, int x, int y, uint32_t
 	return mewborn;
 }
 
-void resetMewborns(struct Simulation* sim){
+void resetMewborns(Simulation* sim){
 	for (int i = 0; i < MAX_POPULATION; ++i){
 		sim->octocats[i].mewborn = false;
 		sim->raptors[i].mewborn = false;
@@ -343,7 +343,7 @@ void tick(Simulation* sim){
 	}
 
 	for (int i = 0; i < MAX_POPULATION; ++i){
-		struct Creature* r = &sim->raptors[i];
+		Creature* r = &sim->raptors[i];
 		int redTractorPoint = 0; //max is 4
 		if (!r->alive || r->mewborn){
 			r->mewborn = false;
